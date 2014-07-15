@@ -27,6 +27,9 @@ gem 'spring',        group: :development
 
 gem 'foundation-rails'
 
+# Use Devise for user authentication
+gem 'devise'
+
 group :development, :test do 
 	gem 'rspec-rails', '~> 3.0.0'
 end
