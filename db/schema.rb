@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140717010653) do
+ActiveRecord::Schema.define(version: 20140717010957) do
+
+  create_table "checkoffs", force: true do |t|
+    t.integer  "state"
+    t.integer  "item_id"
+    t.integer  "column_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "columns", force: true do |t|
     t.string   "title"
